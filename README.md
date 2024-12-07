@@ -4,79 +4,114 @@ Journal for learning Zed from scratch as it will be the editor of choice for som
 
 ## Table of Contents
 - [Context](#context)
+  - [Who TF?](#who-tf?)
+  - [Why TF?](#why-tf?)
+  - [What TF?](#what-tf?)
 - [Happy Path for Zero to Zed](#happy-path-for-zero-to-zed)
-- [Happy People for Zero to Zed](#happy-people-for-zero-to-zed)
+  - [CLI](#1-cli)
+  - [Settings](#2-settings)
+  - [Extensions](#3-extensions)
+  - [Languages, Formatting, Linting](#4-languages,-formatting,-linting)
+  - [Multibuffers](#5-multibuffers)
+  - [Outline Panel](#outline-panel)
+  - [Completions](#completions)
+  - [Assistant](#assistant)
+- [Happy People and Places for Zero to Zed](#happy-people-for-zero-to-zed)
 - [Happy Resources for Zero to Zed](#happy-resources-for-zero-to-zed)
+- [Further Ideas for Zero to Zed](#futher-ideas-for-zero-tozed)
 
 ## Context
 
-*Who TF?*
+### Who TF?
 
-I'm writing this to help me learn Zed and many other other things: asking questions, documenting, and trying to explain stuff is how I learn. The secondary beneficiary are as yet unknown Dear Readers.
+This is of course, primarily, for you, Dear Reader. But the first Dear Reader is myself!
+I'm writing this to help me learn Zed and many other other things: asking questions, documenting, and trying to explain stuff is how I learn. The benefit is to help others.
 
-*Why TF?*
+### Why TF?
 
-I started using Zed on the brink of starting a bunch of projects (is that the collective noun for projects?), and I'm finding myself using VScode more and more... and it's becoming proper crufty... and confusing... and I wanted to reset. I've tried most IDEs over the 30 years (sob) but a fresh kid on the block tickled my interest: Zed.
+I started using Zed in Dec 2024 on the brink of starting a bunch of projects (is that the collective noun for projects?). I'm was finding myself using VScode more and more... and it's becoming proper crufty... and confusing... and I wanted to reset. I've tried most IDEs over the 30 years (cough) but a fresh IDE on the block tickled my interest: Zed.
 
-So, as an average programmer (I'm more a CTO type with 30 years experience doing all sorts) who has never used Zed and has a load of Python, LLM, and other projects to do: Zed it is.
+So, as an average programmer (I'm more a CTO type with 30 years experience doing all sorts) who has never used Zed and has a load of Python, LLM, and other projects to do: *Zed it is*, come what may.
 
-*What TF?*
+### What TF?
 
-I hate doing any tech without at least reading some of the docs, finding people that are part of the project, and finding other user blogs and articles. So step one was to read docs which I share and index.
+I hate doing any tech without at least reading some of the docs. I like to find people that are part of the project. I like to read other user blogs and articles.
 
-Then, I have some projects which I will add as I go along.
+But most useful of all is to learn by doing, so here's what I did as a n00b:
 
-1. The first was a simple ClaudeAI test using Python and Anthropic.
-2. More projects will be added, as I'm looking into Claude MCP, other APIs, and Agents.
-3. How to communicate this stuff.
-4. How to apply it to business (not just tech folks).
+1. Install all the stuff on my Macbook Air (not in this guide).
+2. Read the features before I start playing (see Happy Features below).
+3. Do the basic config as per the docs.
+4. Do a simple Python / Anthropic program.
+5. Write this up.
+6. Consider what is next.
 
-So the rest of this is, for now, just an index of resources I found. I will update the README as I add more found resources and projects I do.
+## Happy Features for Zero to Zed
 
-### Ideas for Zero to Zed
-_Dec 7 2024_
+As a long-time techie, I've worked on systems with, say, a 1,000 nobs and dials. And the best people know which fewest nobs and dials make the most impact. Some never get touched at all. I call this the *Happy Path*.
 
-Here's my rough n00b brainstorm of stuff to do to learn Zed through doing projects, and sharing.
+As a Zed n00b, I'm better placed than an expert Zed user to find this path because I don't have the curse of knowledge. I will, of course, make mistakes, often get lost, and occasionally blown up.
 
-1. Include X users who are helpful.
-2. Find blogs that are helpful and NOT behind paywalls.
-3. Draw a little tree of useful Zed online resources.
-4. Draw a little tree of “happy path” useful Zed functions and features. Maybe colour code and beginner -> intermediate -> advanced?
-5. Compare and contrast to VScode and Neovim (is it in the middle?)
-6. Just link to install, don’t repeat (it’s easy).
-7. Quick concierge tour of the IDE.
-8. Extensions?
-9. Set up for Python?
-10. Set up with Claude IDE?
-11. Markdown?
-12. Set up for Github?
-13. Set up on your laptop (local file structure – use a cloud service like iCloud).
-14. Project examples?
-15. Video content?
-16. What blogs to write?
-17. Create an all-on-one markdown file?
-18. Schedule regular posts on X/LinkedIn.
-19. Reddit group? https://www.reddit.com/r/ZedEditor/
+But here's my 8-step Zed n00b happy path in terms of groking Zed:
 
-## Happy Path for Zero to Zed
+1. [CLI](#1-cli)
+2. [Settings](#2-settings)
+3. [Extensions](#3-extensions)
+4. [Languages, Formatting, Linting](#4-languages,-formatting,-linting)
+5. [Multibuffers](#5-multibuffers)
+6. [Outline Panel](#outline-panel)
+7. [Completions](#completions)
+8. [Assistant](#assistant)
 
-The point of this section is a simple "happy path": not repeating instructions from elsewhere.
+*What's not included in the happy path, because it's not for n00bs*
 
-So we don't talk about Python envs and installing Zed: you need to do that.
+- Key bindings (if you're into this stuff, you're not a n00b).
+- Themes.
+- Debugger - there isn't one built-in at the moment, it's on the [Roadmap](#zed-roadmap)
+- Github - Github help isn't built-in, you need to use the CLI. See [CLI](#cli).
 
-We do talk about the first things to check when you do Zed so you can get your first projects going.
+### 1 CLI
 
-So let's break this into two bits: first happy Zed setup, and first happy Zed project.
+I swear the CLI was installed automagically on mine, but I might have just forget. But make sure you can do the following, if not, just use the Install CLI option in Zed.
 
-### First happy Zed setup
+Like "code .", just pop into your project folder and run the zed app with a cwd period:
 
-xxx
+`chamberz@Steves-Air zero2zed % zed .`
 
-### First happy Zed project
+And of course you can always kick off the Zed app on a Max via Finder > Applications:
 
-xxx
+![Zed app in the Mac Finder](viewyonder_zero2zed_zed_app_finder.png)
 
-## Happy People for Zero to Zed
+You have a built-in CLI terminal in Zed, just like VScode, via control + backtick or View menu.
+
+There is no Github help built into the Zed IDE, so you need to make sure your terminal is setup properly for `git` and `gh` commands.
+
+Make sure you know how to use Python envs. If you use venv like me, then when you kick off the Zed app from the CLI in a project folder with a venv activated: it will work it all out.
+
+### 2 Settings
+
+### 3 Extensions
+
+### 4 Languages, Formatting, Linting
+
+### 5 Multibuffers
+
+### 6 Outline Panel
+
+### 7 Completions
+
+### 8 Assistant.
+
+## Happy Projects for Zero to Zed
+
+Python only in this
+CLaude AI example
+Claude MCP coming next.
+API stuff.
+PydanticAI tbd.
+Other ideas will be added.
+
+## Happy People and Places for Zero to Zed
 
 ### Reddit
 
@@ -105,11 +140,40 @@ This [Zed Community Links page](https://zed.dev/community-links) has useful plac
 
 ## Happy Resources for Zero to Zed
 
-### YouTube
+### Zed YouTube Channels and Content
 
 - [The official ZedDotDev Channel](https://www.youtube.com/@zeddotdev)
 
-### Blogs
+### Zed Blogs
 
 - [The official ZedDotDev Blog](https://zed.dev/blog)
 - [Ben Selby - Zed for a Week](https://benmatselby.dev/post/2024/working-with-zed/)
+
+### Zed Roadmap
+
+The offical [Zed Roadmap](https://zed.dev/roadmap).
+
+## Futher Ideas for Zero to Zed
+_Dec 7 2024_
+
+Here's my rough n00b brainstorm of stuff to do to learn Zed through doing projects, and sharing.
+
+1. Include X users who are helpful.
+2. Find blogs that are helpful and NOT behind paywalls.
+3. Draw a little tree of useful Zed online resources.
+4. Draw a little tree of “happy path” useful Zed functions and features. Maybe colour code and beginner -> intermediate -> advanced?
+5. Compare and contrast to VScode and Neovim (is it in the middle?)
+6. Just link to install, don’t repeat (it’s easy).
+7. Quick concierge tour of the IDE.
+8. Extensions?
+9. Set up for Python?
+10. Set up with Claude IDE?
+11. Markdown?
+12. Set up for Github?
+13. Set up on your laptop (local file structure – use a cloud service like iCloud).
+14. Project examples?
+15. Video content?
+16. What blogs to write?
+17. Create an all-on-one markdown file?
+18. Schedule regular posts on X/LinkedIn.
+19. Reddit group? https://www.reddit.com/r/ZedEditor/
