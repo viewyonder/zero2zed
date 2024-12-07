@@ -2,9 +2,11 @@
 
 Journal for learning Zed from scratch as it will be the editor of choice for some new Python AI projects.
 
-# Table of Contents
+## Table of Contents
 - [Context](#context)
-- [Zed Happy Path for n00bs](#zed-happy-path-for-n00bs)
+- [Happy Path for Zero to Zed](#happy-path-for-zero-to-zed)
+- [Happy People for Zero to Zed](#happy-people-for-zero-to-zed)
+- [Happy Resources for Zero to Zed](#happy-resources-for-zero-to-zed)
 
 ## Context
 
@@ -31,11 +33,10 @@ Then, I have some projects which I will add as I go along.
 
 So the rest of this is, for now, just an index of resources I found. I will update the README as I add more found resources and projects I do.
 
-# Ideas to include
+### Ideas for Zero to Zed
+_Dec 7 2024_
 
 Here's my rough n00b brainstorm of stuff to do to learn Zed through doing projects, and sharing.
-
-This isn't a table of contents for this doc: it's a ToC for what was in my brain before I started!
 
 1. Include X users who are helpful.
 2. Find blogs that are helpful and NOT behind paywalls.
@@ -57,6 +58,58 @@ This isn't a table of contents for this doc: it's a ToC for what was in my brain
 18. Schedule regular posts on X/LinkedIn.
 19. Reddit group? https://www.reddit.com/r/ZedEditor/
 
-## Zed Happy Path for n00bs
+## Happy Path for Zero to Zed
 
-base config here
+The point of this section is a simple "happy path": not repeating instructions from elsewhere.
+
+So we don't talk about Python envs and installing Zed: you need to do that.
+
+We do talk about the first things to check when you do Zed so you can get your first projects going.
+
+So let's break this into two bits: first happy Zed setup, and first happy Zed project.
+
+### First happy Zed setup
+
+xxx
+
+### First happy Zed project
+
+xxx
+
+## Happy People for Zero to Zed
+
+### Reddit
+
+There's a sub for Zed! [Go to the ZedEditor Reddit sub](https://www.reddit.com/r/ZedEditor/
+)
+
+### X
+
+Couldn't find an existing X community. Best I could do as a Zed n00b was start my own X list.
+
+[Join the @4thWaveStevie Zedders list](https://x.com/i/lists/1865387653622862220)
+
+People I've found so far (and will keep =adding!)
+
+- [ZedDotDev official](https://x.com/zeddotdev)
+- [Nathan Sobo, Zed founder](https://x.com/nathansobo)
+- [Steve Chambers, Zed n00b](https://x.com/4thwavestevie)
+
+### Zed Community
+
+This [Zed Community Links page](https://zed.dev/community-links) has useful places to go:
+
+- [Discord](https://discord.com/invite/qSDQ8VWc7k)
+- [Github Discussions](https://github.com/zed-industries/zed/discussions)
+- [Zed Channels](https://zed.dev/docs/channels#channels)
+
+## Happy Resources for Zero to Zed
+
+### YouTube
+
+- [The official ZedDotDev Channel](https://www.youtube.com/@zeddotdev)
+
+### Blogs
+
+- [The official ZedDotDev Blog](https://zed.dev/blog)
+- [Ben Selby - Zed for a Week](https://benmatselby.dev/post/2024/working-with-zed/)
