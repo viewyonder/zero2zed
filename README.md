@@ -103,9 +103,11 @@ Make sure you know how to use Python envs. If you use venv like me, then when yo
 
 Zed settings on the Mac are in a $user/.config/zed directory. In settings.json, you can do your settings.
 
-For n00bs this means you can't set all your settings in the IDE, you need to edit a file.
+> For n00bs this means you don't have a hateful UI wizard to edit your settings.. if you go to Zed > Settings > Open Settings... it just opens your settings.json in Zed. Edit the file. Save it. Changes are automagically applied. *Tidy!*
 
-Once you make a setting, it's automatigically refreshed in the Zed app. You don't have to "reload" or "restart" or "try turning it off and on again".
+This is worth repeating for n00bs, because I think this is one of Zed's northstars to be simple, efficent, and fast: once you change a setting, it's automatigically refreshed in the Zed app. You don't have to "reload" or "restart" or "try turning it off and on again".
+
+*No need to force an unexpected reboot...*
 
 ![IT Crowd no need to force an unexpected reboo](images/itcrowd_force_unexpected_reboot.webp)
 
