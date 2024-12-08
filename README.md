@@ -13,11 +13,22 @@ Journal for learning Zed from scratch as it will be the editor of choice for som
   - [Extensions](#3-extensions)
   - [Languages, Formatting, Linting](#4-languages,-formatting,-linting)
   - [Multibuffers](#5-multibuffers)
-  - [Outline Panel](#outline-panel)
+  - [Outline Panel](#panels)
   - [Completions](#completions)
   - [Assistant](#assistant)
+- [Happy Projects for Zero to Zed](#happy-projects-for-zero-to-zed)
+  - [Simple Claude Test App](#simple-claude-test-app)
+  - [Claude MCP](#claude-mcp)
+  - [PydanticAI](#pydanticai)
+  - [AI Agents](#ai-agents)
 - [Happy People and Places for Zero to Zed](#happy-people-for-zero-to-zed)
+  - [Reddit](#reddit)
+  - [X](#x)
+  - [Zed Community](#zed-community)
 - [Happy Resources for Zero to Zed](#happy-resources-for-zero-to-zed)
+  - [Zed YouTube Channels](#zed-youtube-channels)
+  - [Zed Blogs](#zed-blogs)
+  - [Zed Roadmap](#zed-roadmap)
 - [Further Ideas for Zero to Zed](#futher-ideas-for-zero-tozed)
 
 ## Context
@@ -63,12 +74,12 @@ But here's my 8-step Zed n00b happy path in terms of groking Zed:
 7. [Completions](#completions)
 8. [Assistant](#assistant)
 
-*What's not included in the happy path, because it's not for n00bs*
+*What's not included in the happy path, because they're not for n00bs like me*
 
 - Key bindings (if you're into this stuff, you're not a n00b).
-- Themes.
 - Debugger - there isn't one built-in at the moment, it's on the [Roadmap](#zed-roadmap)
 - Github - Github help isn't built-in, you need to use the CLI. See [CLI](#cli).
+- Themes are simple to use, but let's not talk about customizing/creating.
 
 ### 1 CLI
 
@@ -90,13 +101,52 @@ Make sure you know how to use Python envs. If you use venv like me, then when yo
 
 ### 2 Settings
 
+Zed settings on the Mac are in a $user/.config/zed directory. In settings.json, you can do your settings.
+
+For n00bs this means you can't set all your settings in the IDE, you need to edit a file.
+
+Once you make a setting, it's automatigically refreshed in the Zed app. You don't have to "reload" or "restart" or "try turning it off and on again".
+
+![IT Crowd no need to force an unexpected reboot](itcrowd_force_unexpected_reboot)
+
+*My first favourite settings*
+
+As a n00b, I found these came first:
+
+- Put a soft-wrap on the editor, so lines wrap to the editor width.
+- Extensions like Ruff make their own changes.
+
+My current n00b settings.json looks like this. I hand edited this to add the "soft_wrap" line.
+
+```
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "ui_font_size": 16,
+  "soft_wrap": "editor_width",
+  "buffer_font_size": 16,
+  "theme": {
+    "mode": "system",
+    "light": "One Dark",
+    "dark": "One Dark"
+  }
+
+}
+```
+
 ### 3 Extensions
 
 ### 4 Languages, Formatting, Linting
 
 ### 5 Multibuffers
 
-### 6 Outline Panel
+### 6 Panels
 
 ### 7 Completions
 
@@ -105,11 +155,21 @@ Make sure you know how to use Python envs. If you use venv like me, then when yo
 ## Happy Projects for Zero to Zed
 
 Python only in this
+
+### Simple ClaudeAI Test App
 CLaude AI example
+
+### Claude MCP
+
 Claude MCP coming next.
-API stuff.
-PydanticAI tbd.
-Other ideas will be added.
+
+### PydanticAI
+
+TBD
+
+### AI Agents
+
+TBD
 
 ## Happy People and Places for Zero to Zed
 
@@ -140,7 +200,7 @@ This [Zed Community Links page](https://zed.dev/community-links) has useful plac
 
 ## Happy Resources for Zero to Zed
 
-### Zed YouTube Channels and Content
+### Zed YouTube Channels
 
 - [The official ZedDotDev Channel](https://www.youtube.com/@zeddotdev)
 
