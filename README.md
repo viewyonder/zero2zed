@@ -107,7 +107,7 @@ Zed settings on the Mac are in a $user/.config/zed directory. In settings.json, 
 
 This is worth repeating for n00bs, because I think this is one of Zed's northstars to be simple, efficent, and fast: once you change a setting, it's automatigically refreshed in the Zed app. You don't have to "reload" or "restart" or "try turning it off and on again".
 
-*No need to force an unexpected reboot...*
+*No need to force an unexpected reboot... :smiley:*
 
 ![IT Crowd no need to force an unexpected reboo](images/itcrowd_force_unexpected_reboot.webp)
 
