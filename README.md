@@ -101,14 +101,32 @@ Make sure you know how to use Python envs. If you use venv like me, then when yo
 
 ### 2 Settings
 
-> [!NOTE] TODO
-> Talk about Zed/global vs project settings (and language settings?)
+There are three "layers" of settings, and the first is at the user level.
 
-Zed settings on the Mac are in a $user/.config/zed directory. In settings.json, you can do your settings.
+For me, the Zed settings on the Mac are in a $user/.config/zed directory. In settings.json, you set your settings. But there are "lower levels" that can override these
 
 > For n00bs this means you don't have a hateful UI wizard to edit your settings.. if you go to Zed > Settings > Open Settings... it just opens your settings.json in Zed. Edit the file. Save it. Changes are automagically applied. *Tidy!*
 
 This is worth repeating for n00bs, because I think this is one of Zed's northstars to be simple, efficent, and fast: once you change a setting, it's automatigically refreshed in the Zed app. You don't have to "reload" or "restart" or "try turning it off and on again".
+
+#### 1. Global Settings (~/.config/zed/settings.json)
+
+These affect all projects and workspaces
+Access via Zed > Settings > Open Settings
+Changes apply instantly without restart
+
+
+#### 2. Project Settings (.zed/settings.json in project root)
+
+Override global settings for specific projects
+Create manually or via Command Palette: "Create Project Settings"
+Great for project-specific formatting rules
+
+
+#### 3. Language-Specific Settings
+
+Can be set at both global and project level
+Use the [language_id] key, for example:
 
 *No need to force an unexpected reboot...* :smiley:
 
@@ -168,7 +186,25 @@ However, I learned that there are two parts to this (perhaps more than a n00b ne
 
 ### 5 Multibuffers
 
-TODO
+Multibuffers are one of Zed's standout features. At this time of writing (Dec 8) I haven't used these in anger, but will during the coming projects. I mention them here as a note to myself to make sure I use this handy feature later!
+
+#### Split Views
+
+Cmd/Ctrl + K, then arrow key for direction
+Perfect for viewing tests alongside implementation
+Each pane can have its own layout
+
+#### Pane Navigation
+
+Cmd/Ctrl + W to cycle through panes
+Cmd/Ctrl + number to jump to specific panes
+Cmd/Ctrl + W, W to maximize current pane
+
+#### Smart Features
+
+Auto-arrangement based on file types
+Remembers layouts per project
+Link mode for synchronized scrolling
 
 ### 6 Panels
 
@@ -183,7 +219,43 @@ TODO
 
 ### 8 Assistant.
 
-TODO
+NOTE: I'm currently testing this out.. but here are my early notes:
+
+Zed currently supports multiple AI assistants:
+
+#### GitHub Copilot
+
+Install via Extensions
+Requires GitHub Copilot subscription
+Settings:
+```
+{
+  "copilot": {
+    "enable": true,
+    "enable_auto_suggestions": true
+  }
+}
+```
+
+#### Claude MCP to Claude LLM
+Claude MCP (Multi-Channel Protocol)
+
+Configure Claude MCP in project settings
+```
+{
+  "claude_mcp": {
+    "api_key": "your_api_key",
+    "model": "claude-3-opus-20240229"
+  }
+}
+```
+then
+```
+- Use Command Palette: "Claude: Start Session"
+- Create a `.claude` file for prompts
+```
+
+
 
 ## Happy Projects for Zero to Zed
 
