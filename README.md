@@ -91,7 +91,7 @@ Like "code .", just pop into your project folder and run the zed app with a cwd 
 
 And of course you can always kick off the Zed app on a Max via Finder > Applications:
 
-![Zed app in the Mac Finder](viewyonder_zero2zed_zed_app_finder.png)
+![Zed app in the Mac Finder](images/viewyonder_zero2zed_zed_app_finder.png)
 
 You have a built-in CLI terminal in Zed, just like VScode, via control + backtick or View menu.
 
@@ -107,7 +107,7 @@ For n00bs this means you can't set all your settings in the IDE, you need to edi
 
 Once you make a setting, it's automatigically refreshed in the Zed app. You don't have to "reload" or "restart" or "try turning it off and on again".
 
-![IT Crowd no need to force an unexpected reboot](itcrowd_force_unexpected_reboot)
+![IT Crowd no need to force an unexpected reboo](images/itcrowd_force_unexpected_reboot.webp)
 
 *My first favourite settings*
 
