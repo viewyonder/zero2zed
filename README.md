@@ -101,13 +101,16 @@ Make sure you know how to use Python envs. If you use venv like me, then when yo
 
 ### 2 Settings
 
+> [!NOTE] TODO
+> Talk about Zed/global vs project settings (and language settings?)
+
 Zed settings on the Mac are in a $user/.config/zed directory. In settings.json, you can do your settings.
 
 > For n00bs this means you don't have a hateful UI wizard to edit your settings.. if you go to Zed > Settings > Open Settings... it just opens your settings.json in Zed. Edit the file. Save it. Changes are automagically applied. *Tidy!*
 
 This is worth repeating for n00bs, because I think this is one of Zed's northstars to be simple, efficent, and fast: once you change a setting, it's automatigically refreshed in the Zed app. You don't have to "reload" or "restart" or "try turning it off and on again".
 
-*No need to force an unexpected reboot... :smiley:*
+*No need to force an unexpected reboot...* :smiley:
 
 ![IT Crowd no need to force an unexpected reboo](images/itcrowd_force_unexpected_reboot.webp)
 
@@ -144,22 +147,51 @@ My current n00b settings.json looks like this. I hand edited this to add the "so
 
 ### 3 Extensions
 
+In my [Context](#context) I'm focusing on Python code specifically for AI/LLM projects.
+
+So, as a n00b, I just enabled a couple of Extensions, but it's soooo easy: two points...
+
+1. You can manually use Extensions menu to add an extension "proactively", or
+2. Zed will detect if you'd benefit from an extension, like when I added a JSON file and it asked me if I wanted to add Firefly...
+
+My current extenstions -- and, you guess it, are simply defined in a file! - are:
+
 ### 4 Languages, Formatting, Linting
+
+In my [Context](#context) this is just (for now!) Python, so it's simple.
+
+However, I learned that there are two parts to this (perhaps more than a n00b needs to know, but I"m incredibly nosey):
+
+1. A tree-sitter does the syntax highlight stuff.
+2. A language server parser does the language intelligence stuff (autocomplete etc)
+3. An extension does the format and linting, and in my case it's Ruff!
 
 ### 5 Multibuffers
 
+TODO
+
 ### 6 Panels
+
+1. Outline panel shows the headings / key parts of whatever the main panel has (TODO example)
+2. Terminal panel -- where I run code and do github stuff.
+3. Project panel -- that's your folders and files.
+4. Collab panel -- that's the Zed channels that I haven't use yet, as a n00b.
 
 ### 7 Completions
 
+TODO
+
 ### 8 Assistant.
+
+TODO
 
 ## Happy Projects for Zero to Zed
 
-Python only in this
+These are simple projects to show it works...
 
 ### Simple ClaudeAI Test App
-CLaude AI example
+
+Claude AI example
 
 ### Claude MCP
 
