@@ -255,8 +255,6 @@ then
 - Create a `.claude` file for prompts
 ```
 
-
-
 ## Happy Projects for Zero to Zed
 
 These are simple projects to show it works...
